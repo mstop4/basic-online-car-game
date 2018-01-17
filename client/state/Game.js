@@ -24,7 +24,7 @@ class Game extends Phaser.State {
 
   create() {
     const { width, height } = WORLD_SIZE
-    
+
     // Creates the world
     createWorld(this.game)
     // Connects the player to the server
@@ -34,7 +34,7 @@ class Game extends Phaser.State {
     // Creates the player name text
     this.player.playerName = createText(this.game, this.player.sprite.body)
     // Creates the player speed text
-    this.player.speedText = createText(this.game. this.player.sprite.body)
+    this.player.speedText = createText(this.game, this.player.sprite.body)
 
     // Sends a new-player event to the server
     newPlayer(socket, this.player)
