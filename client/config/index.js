@@ -4,4 +4,5 @@ export const WORLD_SIZE = {
   width: 1280,
   height: 720,
 }
+export const TILE_SIZE = 64
 export const ASSETS_URL = '../assets'
