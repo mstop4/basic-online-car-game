@@ -7,7 +7,7 @@ const config = {
   entry: './client/index.js',
   watch: true,
   output: {
-    path: path.resolve(__dirname, 'dist/client',
+    path: path.resolve(__dirname, 'dist/client'),
     filename: 'index.js'
   },
 
