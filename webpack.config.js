@@ -23,7 +23,9 @@ const config = {
       }
     ]
   },
-  
+
+  devtool: 'inline-source-map',
+
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       compress: {
