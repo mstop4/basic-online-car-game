@@ -1,0 +1,28 @@
+{
+  "name": "basic-online-car-game",
+  "version": "1.0.0",
+  "description": "Basic Online Car Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "html-webpack-plugin": "^2.30.1",
+    "nodemon": "^1.14.11",
+    "uglifyjs-webpack-plugin": "1.1.6",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  }
+}
