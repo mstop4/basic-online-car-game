@@ -23,7 +23,7 @@ const config = {
       }
     ]
   },
-
+  
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       compress: {
@@ -33,7 +33,8 @@ const config = {
         comments: false
       }
     }),
-
-    new HtmlWebpackPlugin({ template: './client/index.html'})
+    new HtmlWebpackPlugin({ template: './client/index.html' })
   ]
 }
+
+module.exports = config
