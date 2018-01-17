@@ -3,7 +3,7 @@ const playerMovementInterpolation = otherPlayers => {
     let player = otherPlayers[id]
     if (player.target_x !== undefined) {
 
-      // Interpolate the player's posiiton and direction
+      // Interpolate the player's position and direction
       player.sprite.body.x += (player.target_x - player.sprite.body.x) * 0.30
       player.sprite.body.y += (player.target_y - player.sprite.body.y) * 0.30
 
