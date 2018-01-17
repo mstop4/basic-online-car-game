@@ -20,6 +20,8 @@ const playerMovementInterpolation = otherPlayers => {
       // Interpolate the player's speed text position
       player.speedText.x += (player.speedText.target_x - player.speedText.x) * 0.30
       player.speedText.y += (player.speedText.target_y - player.speedText.y) * 0.30
+
+      player.updatePlayerStatusText('speed', player.speedText.x, player.speedText.y, player.speedText)
     }
   }
 }

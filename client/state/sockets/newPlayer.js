@@ -8,13 +8,13 @@ const newPlayer = (socket, player) => {
       playerName: {
         name: String(socket.id),
         x: player.playerName.x,
-        y: player.playerName.y,
+        y: player.playerName.y
       },
 
       speed: {
         value: player.speed,
         x: player.speed.x,
-        y: player.speed
+        y: player.speed.y
       }
     })
   })

@@ -19,7 +19,7 @@ const updatePlayers = (socket, otherPlayers, game) => {
         otherPlayers[i] = newPlayer
       }
 
-      playersFound[i] = true;
+      playersFound[i] = true
 
       // Update players data
       if (i !== socket.id) {
@@ -31,8 +31,8 @@ const updatePlayers = (socket, otherPlayers, game) => {
         otherPlayers[i].playerName.target_x = data.playerName.x
         otherPlayers[i].playerName.target_y = data.playerName.y
 
-        otherPlayers[i].speedText.target_x = data.playerName.x
-        otherPlayers[i].speedText.target_y = data.playerName.y
+        otherPlayers[i].speedText.target_x = data.speed.x
+        otherPlayers[i].speedText.target_y = data.speed.y
 
         otherPlayers[i].speed = data.speed.value
       } 
@@ -40,7 +40,7 @@ const updatePlayers = (socket, otherPlayers, game) => {
 
     // Check if there's no missing players, if there is, delete them
     for (let id in otherPlayers) {
-      if (!playerFound[id]) {
+      if (!playersFound[id]) {
         otherPlayers[id].sprite.destroy()
         otherPlayers[id].playerName.destroy()
         otherPlayers[id].speedText.destroy()

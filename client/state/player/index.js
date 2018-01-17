@@ -14,7 +14,7 @@ export default function (x, y, game, socket) {
         W: Phaser.Keyboard.W,
         S: Phaser.Keyboard.S,
         A: Phaser.Keyboard.A,
-        D: Phaser.Keyboard.D,
+        D: Phaser.Keyboard.D
       }
 
       // Only emit if the player is moving
@@ -31,7 +31,7 @@ export default function (x, y, game, socket) {
         }
       }
 
-      // Drive forward if S is pressed down
+      // Drive backwards if S is pressed down
       if (isDown(game, KEYS.S) && this.speed >= -200) {
         this.speed -= 5
       } else {
@@ -75,12 +75,12 @@ export default function (x, y, game, socket) {
 
     updatePlayerName(name = this.socket.id, 
                      x = this.sprite.body.x - 57, 
-                     y = this.sprite.body.y - 39) {
+                     y = this.sprite.body.y - 59) {
       // Updates the player's name text and position
       this.playerName.text = String(name)
       this.playerName.x = x
       this.playerName.y = y
-      // Bring the player's naem to top
+      // Bring the player's name to top
       game.world.bringToTop(this.playerName)
     },
 
