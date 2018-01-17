@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --progress --colors",
-    "dev": "nodemon client/server.js --exec babel-node"
+    "dev": "nodemon server/server.js --exec babel-node"
   },
   "author": "",
   "license": "ISC",
