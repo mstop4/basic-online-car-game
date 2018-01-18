@@ -1,4 +1,5 @@
 import { WORLD_SIZE } from './../../config'
+import TILE_SIZE from './../../config'
 
 const { width, height } = WORLD_SIZE
 
@@ -15,9 +16,9 @@ const worldCreator = game => {
 
 const createMap = game => {
   let groundTiles = []
-  for (let i = 0; i <= width / 64 + 1; i++) {
-    for (let j = 0; j <= height / 64 + 1; j++) {
-      const groundSprite = game.add.sprite(i * 64, j * 64, 'asphalt')
+  for (let i = 0; i <= width / TILE_SIZE + 1; i++) {
+    for (let j = 0; j <= height / TILE_SIZE + 1; j++) {
+      const groundSprite = game.add.sprite(i * TILE_SIZE, j * TILE_SIZE, 'asphalt')
       groundTiles.push(groundSprite)
     }
   }
