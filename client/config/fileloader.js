@@ -1,6 +1,6 @@
 import { ASSETS_URL } from '.'
 
-const fileloader = game => {
+const fileLoader = game => {
   game.load.crossOrigin = 'Anonymous'
   game.stage.backgroundColor = '#202020'
   game.load.image('asphalt', `${ASSETS_URL}/sprites/asphalt/asphalt.png`)

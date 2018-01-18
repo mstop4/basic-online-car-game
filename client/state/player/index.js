@@ -69,6 +69,11 @@ export default function (x, y, game, socket) {
           name: this.playerName.text,
           x: this.playerName.x,
           y: this.playerName.y
+        },
+        speed: {
+          value: this.speed,
+          x: this.speedText.x,
+          y: this.speedText.y
         }
       }) 
     },
