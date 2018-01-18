@@ -1,19 +1,19 @@
-Basic Online Car Game
+# Basic Online Car Game
 
 A simple demo for practicing socket and Phaser programming. Based on this tutorial: 
 
-Install dependencies:
+### Install dependencies
 
-yarn install
+`yarn install`
 
-Build app:
+### Build app
 
-yarn run Build
+`yarn run Build`
 
-Start app:
+### Start app
 
-yarn run dev
+`yarn run dev`
 
-Play app:
+### Play app
 
-Go to localhost:8000 in your browser
+`Go to localhost:8000 in your browser`
